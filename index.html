@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">  
+    <title>NEON CORE</title>
+</head>
+<body>
+    <main>
+        <div class="L">
+    <p>NEONCORE</p>
+    <h1>JOIN THE <br>NEXUS</h1>
+    <P>INITIALIZE YOUR NEONCORE IDENTITY</P>
+    <p>OPERATOR ID                        0/5</p> 
+    <h3>UNASSIGNED</h3>
+    <p>CALLSIGN-----------------------------pending</p>
+    <p>EMAIL--------------------------------pending</p>
+    <p>PASSWORD-----------------------------pending</p>
+    <p>CONFIRM------------------------------pending</p>
+    <p>TERM--------------------------------required</p>
+        </div>
+
+        <div class="FORM">
+            <form id="signup-form" class="form" novalidate>
+             <h2>new operator                         All fields required</h2>
+             <div id="name" class="form-content">
+             <label for="CALLSIGN"><span>></span> CALLSIGN</label>
+             <input id="CALLSIGN" type="text" name="CALLSIGN"  placeholder="e.g vortex_07" minlength="3" maxlength="20" pattern="[A-Za-z0-9_-]+" required>
+             <p class="error-message" id="callsign-error"></p>
+             <p>3-20 characters: letters, numbers,_or-</p>
+             </div>
+             <div id="email" class="form-content">
+             <label for="EMAIL"><span>></span> EMAIL</label>
+             <input id="EMAIL" type="email" name="EMAIL" placeholder="you@gmail.com" required>
+             <p id="email-error"></p>
+             </div>
+             <div id="PASSWORD" class="form-content">
+                <label for="password"><span>></span> PASSWORD</label>
+                <input id="password" type="password" name="password" minlength="8" required>
+                <p id="password-error"></p>
+                <p>At least 8 characters</p>
+             </div>
+
+             <div id="CONFIRM-PASSWORD" class="form-content">
+                <label for="confirm-password"><span>></span> confirm password</label>
+                <input id="confirm-password" type="password" name="confirm-password" required>
+                <p id="confirm-password-error"></p>
+                </div>
+                <div id="term-confirmation" class="form-content">
+                    <input type="checkbox" name="term" id="term" required>
+                    <p id="term-error"></p>
+                    <label for="term">I accept the <a>terms</a> and <a>privacy</a> policy</label>
+                </div>
+                <div id="submit-btn" class="form-content">
+                    <button id="submit" type="submit">INITIALIZE ACCOUNT</button>
+                </div>
+                <p>already an opretor <a>log in</a></p>
+            </form>
+        </div>
+        
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

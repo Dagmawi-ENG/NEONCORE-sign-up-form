@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+body{
+    background-color: #080B10;
+    color: white;
+    min-height: 100vh;
+    font-family: Rajdhani, sans-serif;
+    margin: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 18px;
+    width: 100%;
+    min-height: 100vh;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+    background-color: var(--panel-color);
+    padding: 20px;
+    border-radius: 16px;
+    border: 2px solid var(--cyber-cyan);
+    box-sizing: border-box;
+}
+
+.form-content{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+#term-confirmation {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.L{
+    display: flex;
+    flex-direction: column;
+    gap:18px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+.L h1 {
+    font-family: 'orbitron', sans-serif;
+}
+.L h3{
+    font-family: 'orbitron', sans-serif;
+}
+.form input:not([type="checkbox"]){
+    padding: 20px;
+    border-radius: 16px;
+    margin: 10px;
+    transition: 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+.form input:focus{
+    outline: none;
+    border: 2px solid var(--cyber-cyan);
+}
+
+form input:active{
+    transform:scale(1.05);
+    background-color: var(--cyber-cyan);
+}
+.form input:hover{
+    box-shadow: 0px 0px 2px 2px var(--cyber-cyan) ;
+    outline: var(--cyber-cyan);
+}
+.form span{
+    color: var(--button-color);
+}
+.form a{
+    color: var(--button-color);
+}
+.form button{
+    background-color: var(--button-color);
+    padding: 20px;
+    transition: 0.3s ease-in;
+}
+
+.form button:hover{
+    opacity: 0.8;
+}
+
+.form button:active{
+    transform: scale(1.05);
+}
+
+.form h2{
+    font-family: orbitron, sans-serif;
+}
+:root{
+--primary-color:#080B10;
+--panel-color:#111923;
+--button-color:#B6FF00;
+--cyber-cyan:#00E5FF;
+}
+@media(max-width: 600px){
+main{
+    grid-template-columns: 1fr;
+}
+}
+
+.invalid {
+    border: 1px solid red;
+}
